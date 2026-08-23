@@ -29,7 +29,7 @@ src/ui.*            pages, navigation, and telemetry-neutral StatusModel
 
 Telemetry code should update `StatusModel` from its own task and call `ui::Update()` while holding the UI lock. Do not put MAVLink parsing, radio code, or sensor reads inside `ui.cpp`; the model is deliberately the seam between data acquisition and presentation.
 
-## Known-good bench result
+## Bench acceptance check
 
 Successful bring-up shows `DISPLAY OK`, increments uptime once per second, cycles through three pages on short presses, and increments the packet/test counter after a long press. Serial output begins with `starting display test harness` at 115200 baud.
 
