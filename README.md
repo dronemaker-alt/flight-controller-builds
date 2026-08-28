@@ -26,11 +26,16 @@ This repository is populated from the active ChatGPT project thread and should b
 │   ├── k66-mk66fn2m0/
 │   ├── power-system/
 │   └── usb-c-migration/
-├── inventory/                    Known parts and material inventory
+├── inventory/                    Canonical hardware register, storage map, and procurement watch list
 ├── mechanical/                   Handheld enclosure and mockup notes
 ├── tools/                        Flashing, backup, and bench-test helpers
 └── roadmap/                      Build phases and TODO tracking
 ```
+
+Start with the [hardware inventory](inventory/current-hardware.md) before
+buying, moving, reserving, or assigning parts to a build. The
+[inventory guide](inventory/README.md) defines status, quantity, storage, and
+firmware-compatibility fields.
 
 ## Immediate Build Philosophy
 
@@ -69,4 +74,4 @@ Start with one MCU practice placement before assembling a small batch.
 
 ## Status
 
-Initial repository structure seeded. Next steps are board photos, annotated pin-1 diagrams, measured power rails, and first bring-up notes.
+Initial repository structure seeded. Next steps are board photos, annotated pin-1 diagrams, measured power rails, a physical inventory count, and first bring-up notes.
